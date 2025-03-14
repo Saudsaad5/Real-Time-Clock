@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+}
+
+#clock{
+    font-size: 50px;
+    font-family: 'Share Tech Mono', monospace;
+    color: lightgreen;
+    border: 1px solid;
+    padding: 15px;
+    border-radius: 10px;
+    text-shadow: 0 0 20px lightgreen, 0 0 30px lime;
+    animation: glowAnimation 1s infinite alternate;
+}
+
+@keyframes glowAnimation {
+    0% { text-shadow: 0 0 10px lightgreen, 0 0 20px lime; }
+    100% { text-shadow: 0 0 20px lime, 0 0 30px greenyellow; }
+}
